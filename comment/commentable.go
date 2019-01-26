@@ -38,7 +38,7 @@ func verify(db *bolt.DB, kind string) (found bool) {
 }
 
 type commentable struct {
-	kind string // author, books, posts
+	kind string // author, books
 	key  string // resource id
 	db   *bolt.DB
 }
